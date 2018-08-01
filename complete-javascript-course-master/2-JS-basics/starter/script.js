@@ -84,6 +84,7 @@ console.log(typeof now);
 /******************************
  * Operator precedence
  *****************************/
+/*
  var now = 2018;
  var yearJohn = 1989;
  var fullAge = 18;
@@ -109,8 +110,29 @@ x *= 2; // x * 2
 console.log(x);
 x++ //x + 1
 console.log(x);
+x-- // x -1
+console.log(x);
+*/
 
+/************************
+ * Coding Challeng 1
+ **************************/
 
+ var markHeight, markWeight, johnHeight, johnWeight
+
+ markHeight = 71;
+ markWeight = 199;
+
+ johnHeight = 76;
+ johnWeight = 192;
+
+ var markBMI = (markHeight * markHeight) / markWeight;
+ var johnBMI = (johnHeight * johnHeight) / johnWeight;
+
+ console.log("Mark's BMI = " + markBMI + " and John's BMI is " + johnBMI);
+
+ var markHigherBMI = markBMI > johnBMI;
+ console.log("Is Mark's BMI higher? " + markHigherBMI);
 
 
 
