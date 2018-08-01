@@ -117,7 +117,7 @@ console.log(x);
 /************************
  * Coding Challeng 1
  **************************/
-
+/*
  var markHeight, markWeight, johnHeight, johnWeight
 
  markHeight = 71;
@@ -133,6 +133,7 @@ console.log(x);
 
  var markHigherBMI = markBMI > johnBMI;
  console.log("Is Mark's BMI higher? " + markHigherBMI);
+*/
 
 
 
