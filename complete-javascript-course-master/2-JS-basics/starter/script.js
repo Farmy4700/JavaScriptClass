@@ -135,12 +135,139 @@ console.log(x);
  console.log("Is Mark's BMI higher? " + markHigherBMI);
 */
 
+/*****************************
+ * If Else Statements
+ */
+
+/* var firstName = 'John';
+ var civilStatus = 'single';
+
+ if (civilStatus === 'married') {
+     console.log(firstName + ' is married');
+ } else {
+     console.log(firstName + ' is single');
+ }
+
+ 
+ 
+ var isMarried = false;
+
+ if (isMarried) {  //no need for === true on boolean
+    console.log(firstName + ' is married');
+} else {
+    console.log(firstName + ' is single');
+}
+
+var markHeight, markWeight, johnHeight, johnWeight
+
+markHeight = 71;
+markWeight = 199;
+
+johnHeight = 76;
+johnWeight = 192;
+
+var markBMI = (markHeight * markHeight) / markWeight;
+var johnBMI = (johnHeight * johnHeight) / johnWeight;
+
+console.log("Mark's BMI = " + markBMI + " and John's BMI is " + johnBMI);
+
+//var markHigherBMI = markBMI > johnBMI;
+//console.log("Is Mark's BMI higher? " + markHigherBMI);
+
+if (markBMI > johnBMI) {
+    console.log('Mark is fatter than John.');
+}
+else {
+    console.log('John is fatter than Mark');
+}
+*/
 
 
 
+/****************************
+ * Boolean Logic
+ *****************************/
+
+/* var firstName = 'John';
+ var age = prompt('How old is John?')//popup window asking how old john is
+
+ if (age <  13) {
+     console.log(firstName + ' is a boy');
+ } else if (age >= 13 && age < 20) { //between 13 and 20
+    console.log(firstName + ' is a teenager');
+ } else if(age >=20 && age < 30 ) {
+     console.log(firstName + 'John is a young man.');
+ } else {
+     console.log(firstName + ' is a man.');
+ }
+*/
+
+/***************************
+ * The ternary operator and switch statements
+ ******************************/
+
+var firstName = 'John';
+var age = 16;
+
+//ternary operator
+age >= 18 ? console.log(firstName + ' drinks beer.')
+: console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+/* if (age >= 18) { //how to write above statement with if else
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+*/
 
 
+//switch statement
+var job = 'teacher';
 
+switch (job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives a truck');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+}
+
+/*
+var age = prompt('How old is John?')//popup window asking how old john is
+
+if (age <  13) {
+    console.log(firstName + ' is a boy');
+} else if (age >= 13 && age < 20) { //between 13 and 20
+   console.log(firstName + ' is a teenager');
+} else if(age >=20 && age < 30 ) {
+    console.log(firstName + 'John is a young man.');
+} else {
+    console.log(firstName + ' is a man.');
+}
+*/
+var age = prompt('How old is John?')//popup window asking how old john is
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager');
+        break;
+    case age >=20 && age < 30:
+        console.log(firstName + 'is a young man.');
+        break;
+    default:
+        console.log(firstName + ' is a man.')
+
+
+}
 
 
 
