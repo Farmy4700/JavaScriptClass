@@ -205,7 +205,7 @@ else {
 /***************************
  * The ternary operator and switch statements
  ******************************/
-
+/*
 var firstName = 'John';
 var age = 16;
 
@@ -221,10 +221,12 @@ console.log(drink);
 } else {
     var drink = 'juice';
 }
+/*
 */
 
 
 //switch statement
+/*
 var job = 'teacher';
 
 switch (job) {
@@ -238,7 +240,7 @@ switch (job) {
     default:
         console.log(firstName + ' does something else.');
 }
-
+*/
 /*
 var age = prompt('How old is John?')//popup window asking how old john is
 
@@ -252,6 +254,8 @@ if (age <  13) {
     console.log(firstName + ' is a man.');
 }
 */
+
+/*
 var age = prompt('How old is John?')//popup window asking how old john is
 switch (true) {
     case age < 13:
@@ -265,9 +269,132 @@ switch (true) {
         break;
     default:
         console.log(firstName + ' is a man.')
-
-
 }
+/*
+
+/*******************************
+ * Truthy and Falsy values and equality operators
+ ******************************/
+// falsy values:  undefined, null, 0, '' , NaN
+//truthy values:  All that are not falsy values
+/*
+var height;
+
+height = 23;
+
+if (height  || height === 0) { 
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+
+//Equality operators
+if (height == '23') {
+    console.log('The == operator does type coercion!');
+}
+*/
+
+/****************************
+ * Coding Challenge 2
+ *************************/
+/*
+ var markTeamAvg, johnTeamAvg, maryTeamAvg;  //variables to hold average score
+
+ var mtGame1, mtGame2, mtGame3, jtGame1, jtGame2, jtGame3, maryGame1, maryGame2, maryGame3;  //variables to hold score of each game
+ //setting scores for each game
+ jtGame1 = 89;
+ jtGame2 = 120;
+ jtGame3 = 103;
+
+ mtGame1 = 94;
+ mtGame2 = 116;
+ mtGame3 = 123;
+
+ maryGame1 = 97;
+ maryGame2 = 134;
+ maryGame3 = 105;
+ 
+ johnTeamAvg = ((jtGame1 + jtGame2 + jtGame3) / 3);
+ markTeamAvg = ((mtGame1 + mtGame2 + mtGame3) / 3);
+ maryTeamAvg = ((maryGame1 + maryGame2 + maryGame3) / 3);
+ console.log(markTeamAvg + ' is Mark\'s average score.')
+ console.log(johnTeamAvg + ' is John\'s average score.')
+ console.log(maryTeamAvg + ' is Mary\'s average score.')
+
+ switch (true) {
+ case johnTeamAvg > markTeamAvg && johnTeamAvg > maryTeamAvg:
+    console.log('John\'s team is the winner.');
+    break;
+ 
+ case (markTeamAvg > johnTeamAvg && markTeamAvg > markTeamAvg):
+    console.log('Mark\'s team is the winner.');
+    break;
+ case (markTeamAvg === johnTeamAvg === maryTeamAvg):
+    console.log('It was a 3 way tie');
+    break;
+case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
+    console.log('Mary is the winner');
+  default:
+     console.log('Mary\'s team is the winner.');
+ }
+ */
+
+ /*********************************************
+  * Functions
+  ********************************************/
+ // var birthyear = prompt('What year were you born?')
+ 
+  function calculateAge(birthyear) {
+     return 2018 - birthyear;
+ }
+
+ //var ageJohn = calculateAge(birthyear);
+ var ageJohn = calculateAge(1992);
+ var ageMark = calculateAge(1948);
+ var ageMike = calculateAge(1973);
+
+ console.log(ageJohn, ageMark, ageMike);
+
+ function yearsUntilRetirement(year, firstName) {
+     var age = calculateAge(year);
+     var retirement = 65 - age;
+
+     if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+     }
+     else{
+         console.log(firstName + ' is retired');
+     }
+     
+ }
+
+ yearsUntilRetirement(1990, 'John');
+ yearsUntilRetirement(1969, 'Mike');
+ yearsUntilRetirement(1943, 'Jane');
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
