@@ -403,7 +403,7 @@ case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
   /*************************************
    * Arrays
    *************************/
-
+/*
 //Initializa new array   
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
@@ -435,6 +435,30 @@ console.log(john.indexOf(1990));  //indexOf returns a position of an array item
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
 console.log(isDesigner);
+*/
+
+function tipCalculator(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if ( bill >= 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+//console.log(tipCalculator(100));  //testing the function
+
+var bill = [124, 268, 48];
+var tips = [tipCalculator(bill[0]), tipCalculator(bill[1]), tipCalculator(bill[2])];
+
+var finalValues = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
+
+console.log(tips, finalValues);
+
+
+
 
 
 
