@@ -343,7 +343,7 @@ case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
   * Functions
   ********************************************/
  // var birthyear = prompt('What year were you born?')
- 
+ /*
   function calculateAge(birthyear) {
      return 2018 - birthyear;
  }
@@ -371,8 +371,33 @@ case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
  yearsUntilRetirement(1990, 'John');
  yearsUntilRetirement(1969, 'Mike');
  yearsUntilRetirement(1943, 'Jane');
- 
- 
+ */
+
+ /**********************************
+  * Function Statements and Expressions
+  ***********************************/
+
+ //Function deckaratrion
+ // function whatDoYouDo(job, firstName){}
+
+  //Function expression
+  var whatDoYouDo = function(job, firstName) {
+      switch(job) {
+          case 'teacher':
+            return firstName + ' teaches kids how to code';
+          case 'driver':
+            return firstName + ' drives for Uber';
+          case 'designer':
+            return firstName + ' designs cool things';
+          default: 
+            return firstName + ' does something else';
+
+      }
+  }
+  console.log(whatDoYouDo('teacher', 'John'));
+  console.log(whatDoYouDo('driver', 'Mary'));
+  console.log(whatDoYouDo('designer', 'Mike'));
+  
 
 
 
