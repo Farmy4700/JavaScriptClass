@@ -381,6 +381,7 @@ case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
  // function whatDoYouDo(job, firstName){}
 
   //Function expression
+  /*
   var whatDoYouDo = function(job, firstName) {
       switch(job) {
           case 'teacher':
@@ -397,7 +398,55 @@ case (markTeamAvg === johnTeamAvg && maryTeamAvg > markTeamAvg):
   console.log(whatDoYouDo('teacher', 'John'));
   console.log(whatDoYouDo('driver', 'Mary'));
   console.log(whatDoYouDo('designer', 'Mike'));
-  
+  */
+
+  /*************************************
+   * Arrays
+   *************************/
+
+//Initializa new array   
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+console.log(names.length);
+
+//mutate array data   
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+console.log(names);
+
+//Different data types
+
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');  //push adds to the end of array
+john.unshift('Mr.'); //unshift adds to the beginning of the array
+console.log(john);
+
+john.pop();  //pop removes item from the end of the array
+console.log(john);
+john.pop();
+console.log(john);
+john.shift(); //removes from the beginning of the array
+console.log(john);
+
+console.log(john.indexOf(1990));  //indexOf returns a position of an array item
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
+console.log(isDesigner);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
