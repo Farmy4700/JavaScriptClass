@@ -436,7 +436,7 @@ console.log(john.indexOf(1990));  //indexOf returns a position of an array item
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
 console.log(isDesigner);
 */
-
+/*
 function tipCalculator(bill) {
     var percentage;
     if (bill < 50) {
@@ -456,6 +456,117 @@ var tips = [tipCalculator(bill[0]), tipCalculator(bill[1]), tipCalculator(bill[2
 var finalValues = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
 
 console.log(tips, finalValues);
+*/
+
+/**********************************
+ * Objects and Properties
+ **********************************/
+
+ /*
+ //object literak
+ var john =  {
+     firstName: 'John',
+     lastName: 'Smith',
+     birthYear: 1990,
+     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+     job: 'teacher',
+     isMarried: false
+ }
+ console.log(john.firstName);
+ console.log(john['lastName']); 
+ var x = 'birthYear';
+ console.log(john[x]);
+
+ john.job = 'designer';  //mutating data
+ john['isMarried'] = true; //mutating data another way
+
+ console.log(john);
+ //new object syntax
+ var jane = new Object();
+ jane.name = 'Jane';
+ jane.birthYear = 1969;
+ jane['lastName'] = 'Smith';
+ console.log(jane);
+ */
+
+ /***************************
+  * Objects and methods
+ **************************/
+ /*
+ var john =  {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function() {
+        this.age = 2018 - this.birthYear;  //this will add to this 
+    }
+ }
+ john.calcAge();
+ console.log(john);
+*/
+ var john =  {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 124,
+    height: 72,
+    calcBMI: function() {
+        this.BMI = this.mass / (this.height * this.height);  
+        return this.bmi;
+    }
+ }
+
+ var mark =  {
+    firstName: 'Mark',
+    lastName: 'Jobs',
+    mass: 199,
+    height: 75,
+    calcBMI: function() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.bmi;  
+    }
+ }
+ mark.calcBMI();
+ john.calcBMI();
+ 
+ if (mark.BMI > john.BMI) {
+     console.log(mark.firstName + ' ' + mark.lastName + ' BMI is ' + mark.BMI);
+ }
+ else if (mark.BMI < john.BMI)  {
+    console.log(john.firstName + ' ' + john.lastName + ' BMI is ' + john.BMI);
+ }
+ else  {
+     console.log(mark.firstName + ' and ' + john.firstName + ' BMI is equal at ' + john.BMI);
+ }
+ console.log(john.BMI);
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
