@@ -593,7 +593,7 @@ console.log(tips, finalValues);
 */
 //Coding challenge
 
-
+/*
 
 var john = {
     fullName: 'John Smith',
@@ -664,6 +664,8 @@ if (john.average > mark.average) {
         console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);
     } 
     
+*/
+
 
 
 
